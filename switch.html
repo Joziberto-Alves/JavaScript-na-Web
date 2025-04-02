@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    
+
+    <script>
+        const operação = 1
+        // 1 - soma | 2 - Subtração | 3 - Divisão | 4 - Multiplicação
+        switch(operação){
+            case 1:
+                //Código da soma
+                break
+            case 2:
+                //Código da subtração
+                break
+            case 3:
+                //Código da divisão
+                break
+            case 4: 
+                //Código da multiplicação
+                break
+            default:
+                //Opção inválida
+        }
+
+        const dataDeHoje = new Date
+
+        const diaSemana = dataDeHoje.getDay()
+
+        alert(diaSemana)
+
+        switch(diaSemana){
+            case 0:
+                alert(`Hoje é Domingo!`)
+                break;
+            case 1:
+                alert(`Hoje é Segunda-feira!`)
+                break;
+            case 2:
+                alert(`Hoje é Terça-feira!`)
+                break;
+            case 3:
+                alert(`Hoje é Quarta-feira!`)
+                break;
+            case 4:
+                alert(`Hoje é Quinta-feira!`)
+                break;
+            case 5:
+                alert(`Hoje é Sexta-feira!`)
+                break;
+            case 6:
+                alert(`Hoje é Sabado!`)
+                break;
+            default:
+                alert()
+        }
+
+    </script>
+</body>
+</html>

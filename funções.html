@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    
+
+    <script>
+        function exibirNomeEstudante(nome){
+            alert(nome)
+        }
+        function formataInforEstudante(nome1,nota){
+            const infor = `
+            ===========================
+            O nome do aluno é ${nome1}
+            Sua nota é ${nota}
+            ===========================`
+            return infor
+        }
+        const nome = 'Joziberto'
+        exibirNomeEstudante(`${nome}`)
+
+        exibirNomeEstudante('Coraline')
+
+        const nome1 = 'Rebecca'
+        const nota = 5
+
+        const infor = formataInforEstudante(nome1,nota)
+        alert(infor)
+
+        function calcularMedia(nota1,nota2,nota3,nota4){
+            let media = (nota1+nota2+nota3+nota4)/4
+            return `A média desse aluno é de ${media}`
+        }
+        const nota1 = 5
+        const nota2 = 9
+        const nota3 = 8
+        const nota4 = 3
+
+        const media = calcularMedia(nota1,nota2,nota3,nota4)
+        alert(media)
+
+        //função anonima
+        const calculaMedia = function(n1,n2,n3,n4){
+            return (n1+n2+n3+n4)/4
+        }
+        alert(calculaMedia(8,6,6,8))
+    </script>
+</body>
+</html>

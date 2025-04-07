@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        const calculadora = function(n1,n2,operacao){
+            switch (operacao){
+                case '+' :
+                    return n1+n2
+                    break;
+                case '-' :
+                    return n1-n2
+                    break;
+                case '/' :
+                    return n1/n2
+                    break;
+                case '*' :
+                    return n1*n2
+                    break;
+                default:
+                    return 'operação inválida'
+            }
+        }
+        alert(calculadora(2,2,'+'))
+        alert(calculadora(2,2,'-'))
+        alert(calculadora(2,0,'/'))
+        alert(calculadora(2,3,'*'))
+        alert(calculadora(2,3,'%'))
+
+        const transformador = function (grau) {
+            const grauC = (grau - 32)/1.8
+            return grauC.toFixed
+        }
+        alert(transformador(50))
+    </script>
+</body>
+</html>

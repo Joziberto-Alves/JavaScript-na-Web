@@ -48,6 +48,46 @@
             return (n1+n2+n3+n4)/4
         }
         alert(calculaMedia(8,6,6,8))
+
+        const exibirNomeENota = function (){
+            alert(`Nome: ${nome} | Nota: ${nota}`)
+        }
+        exibirNomeENota()
+
+        //arrow fuction
+        const calculaMedia2 = (n1,n2,n3,n4) => {
+            return (n1+n2+n3+n4)/4
+        }
+
+        const calculaMedia3 =  (n1,n2,n3,n4) => (n1+n2+n3+n4)/4
+
+        const negativoOuPositivo = function (num){
+            if(num > 0){
+                return `O Numero ${num} é positivo`
+            }else if(num < 0){
+                return `O Numero ${num} é negativo`
+            }else{
+                return `O Numero ${num} é 0`
+            }
+        }
+        alert(negativoOuPositivo(-5))
+        alert(negativoOuPositivo(3))
+        const parOuImpar = (number) =>{
+            if (number % 2 == 0){
+                return `O número ${number} é par`
+            }else{
+                return `O número ${number} é impar`
+            }
+        }
+        alert(parOuImpar(6))
+        alert(parOuImpar(9))
+
+        //ternário
+        const parOumparTernario = (numb) =>{
+            return numb % 2 == 0 ? 'par' : 'impar';
+        }
+        alert(parOumparTernario(4))
+
     </script>
 </body>
 </html>

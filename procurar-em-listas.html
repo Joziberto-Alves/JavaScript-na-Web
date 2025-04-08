@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procurar em listas</title>
+</head>
+<body>
+    
+    <script>
+        // const pets = ['Cachorro', 'Gato', 'hamster']
+
+        // // retorna se existe na lista:
+        // alert(pets.includes('Morcego'))
+        
+        // //retorna o numero da lista que o item esta, o indice.
+        // alert(pets.indexOf('Gato'))
+
+        const alunos = ['João', 'Julian', 'Caio', 'Ana']
+        const notas = [10, 8, 7.5,9]
+
+        const alunosMedia = [alunos,notas]
+
+        /*Criar uma função chamada 'ExibeNomeENota'
+        que racebe como parametro o nome do estudante 
+        verifique se ele está na lista 'alunosMedia',
+        se estiver retorne nome e a media do estudante,
+        se não estiver, retorne 'Aluno'*/
+
+        const ExibeNomeENota = (nome) =>{
+            if (alunosMedia[0].includes(nome)){
+                let indice = alunosMedia[0].indexOf(nome)
+                return `O aluno ${alunosMedia[0][indice]} e sua nota é ${alunosMedia[1][indice]}`
+            }
+            else{
+                return `Estudante ${nome} não existe`
+            }
+        }
+        alert(ExibeNomeENota('Ana'))
+
+    </script>
+</body>
+</html>

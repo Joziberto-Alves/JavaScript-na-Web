@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adicionar/remove listas</title>
+</head>
+<body>
+    
+    <script>
+        const notas = [10, 6.5, 8, 7.5]
+
+        alert('notas: ' + notas)
+
+        // Adicionando um elemento no final da lista
+        notas.push(10, 7, 4)
+
+        alert('notas atualizadas: ' + notas)
+
+        // Removendo o último elemento da lista
+        notas.pop()
+
+        const valor = prompt(parseFloat('Digite um valor'))
+
+        /*pedir ao usuario 4 numeros
+        adiconar os numeros a uma lista
+        mostrar na tela todos os elementos da lista
+        e a sua quantidade*/
+
+        const nota1 = parseFloat(prompt('Digite a nota 1'))
+        const nota2 = parseFloat(prompt('Digite a nota 2'))
+        const nota3 = parseFloat(prompt('Digite a nota 3'))
+        const nota4 = parseFloat(prompt('Digite a nota 4'))
+
+        const listaNotas = []
+
+        listaNotas.push(nota1, nota2, nota3, nota4)
+
+        alert(`Os números são` + listaNotas)
+
+    </script>
+</body>
+</html>

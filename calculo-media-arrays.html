@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculo media com arrays</title>
+</head>
+<body>
+    
+
+    <script>
+        // 
+        const notas = [10, 6.5, 8, 7.5]
+
+        alert(notas[3])
+
+        const media = (notas[0] + notas[1] + notas[2] + notas[3]) / notas.length
+        alert(`A média é ${media}`) 
+        //
+        //
+        const notas2 = [10, 6.5, 8, 7.5]
+        let somaDasNotas = 0
+        for (let i = 0; i < notas2.length; i++) {
+            somaDasNotas += notas2[i]
+        }
+        const media2 = somaDasNotas / notas2.length
+        alert(`A média é ${media2}`)
+    </script>
+</body>
+</html>

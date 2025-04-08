@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar Lista</title>
+</head>
+<body>
+    
+    <script>
+        const listaEstudantes = ['João', 'Ana', 'Caio', 'Lara ', 'Marjorie']
+
+        /*Adicione essa lista de estudantes adicionando
+        o estudante Rodrigo no lugar dos estudantes ana e Caio*/
+
+        listaEstudantes.splice(1, 2, 'Rodrigo')
+
+        alert(`A lista de estudantes é: ${listaEstudantes.join(', ')}`)
+
+    </script>
+</body>
+</html>

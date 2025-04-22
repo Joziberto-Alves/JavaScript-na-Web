@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+</head>
+<body>
+    
+    <script>
+        let notas = []
+
+        for (let i = 1; i <= 5; i++) {
+            let nota = parseFloat(prompt(`Digite a nota do ${i}º aluno`))
+            notas.push(nota)
+        }
+
+        notas.forEach((nota) => {
+            if (nota >= 7) {
+                alert(`Aluno ${(notas.indexOf(nota))+1} foi aprovado!`)
+            }
+            else if (nota >=5 && nota < 7) {
+                alert(`Aluno ${(notas.indexOf(nota))+1} está de recuperação!`)
+            }
+            else{
+                alert(`Aluno ${(notas.indexOf(nota))+1} foi reprovado!`)
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de getElementByClassName</title>
+</head>
+<body>
+    
+    <p class="destaque">Texto 1</p>
+    <p class="destaque">Texto 2</p>
+
+    <script>
+
+        const textos = document.getElementsByClassName('destaque')
+        textos[0].style.color = 'red'
+        textos[1].innerHTML = 'Texto 1 alternado'
+
+    </script>
+</body>
+</html>

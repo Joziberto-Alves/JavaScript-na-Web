@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelector</title>
+</head>
+<body>
+    <div class='container'>
+    <p class='mensagem'></p>
+</div>
+
+    <script>
+        const p = document.querySelector('.mensagem')
+
+        const conteudo = document.querySelector('.container p')
+
+        conteudo.style.backgroundColor = 'blue'
+
+        const paragrafos = document.querySelectorAll('p')
+
+        alert(paragrafos.length)
+
+    </script>
+</body>
+</html>

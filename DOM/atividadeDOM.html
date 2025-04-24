@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 02 DOM</title>
+</head>
+<body>
+    <div class="container" style="text-align: center; margin-top: 50px;">
+        <h1>Desafio: Contador de cliques</h1>
+        <h2 id="cont">0</h2>
+        <button id="btn">Clique Aqui</button>
+    </div>
+
+    <script>
+        const button = document.getElementById('btn')
+        const cont = document.getElementById('cont')
+        let conter = parseInt(cont.innerText);
+
+        button.addEventListener('click', () => {
+            conter += 1;
+            cont.innerText = '' + conter;
+        });
+    </script>
+
+</body>
+</html>

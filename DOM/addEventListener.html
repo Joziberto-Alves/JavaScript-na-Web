@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+    <style>
+        #minhaDiv {
+            height: 300px;
+            width: 300px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">clique</button>
+
+    <div id="minhaDiv">
+
+    </div>
+
+    <script>
+        const button = document.getElementById('btn')
+        const div = document.getElementById('minhaDiv')
+
+        div.addEventListener('click', () => {
+            // alert('Botão clicado!')
+            div.style.backgroundColor = 'blue'
+            div.style.width = '500px'
+        })
+    </script>
+</body>
+</html>

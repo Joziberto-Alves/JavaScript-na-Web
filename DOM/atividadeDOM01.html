@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade DOM 01</title>
+</head>
+<body>
+    <h1>Desafio</h1>
+    <h2>Clique no botão para acender/apagar a lâmpada</h2>
+    <br>
+    <img id='foto' src="img3.jpg" alt="Lâmpada">
+
+    <button id="btn">clique</button>
+    <script>
+        const foto = document.getElementById('foto')
+        const button = document.getElementById('btn')
+        button.addEventListener('click', () => {
+            if (foto.src.includes('img3.jpg')) {
+                foto.src = 'img4.avif'
+            } else if (foto.src.includes('img4.avif')) {
+                foto.src = 'img3.jpg'
+            }
+        })
+
+    </script>
+</body>
+</html>

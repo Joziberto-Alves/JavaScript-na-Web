@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setAttribute e getAttribute</title>
+</head>
+<body>
+    <img src="img1.jpg" alt="" id="foto">
+
+    <script>
+        const img = document.getElementById('foto')
+        img.setAttribute('src', 'img2.jpeg') // Altera o atributo src para img2.jpg
+        const valorAtributo = img.getAttribute('src') // Pega o valor do atributo src
+        alert(valorAtributo) // img2.jpg
+    </script>
+</body>
+</html>

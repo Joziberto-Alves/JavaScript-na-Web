@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerText innerHTML e textContent</title>
+</head>
+<body>
+    <p id="demo">Olá!</p>
+
+    <script>
+        const demo = document.getElementById('demo')
+        demo.innerText = 'Texto com innerText'
+        demo.innerHTML = '<strong>Negrito com innerHTML</strong>'
+
+        let textoElemento = demo.textContent
+        alert(textoElemento) // Negrito com innerHTML
+    </script>
+</body>
+</html>

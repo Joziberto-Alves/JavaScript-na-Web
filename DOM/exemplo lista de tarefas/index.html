@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lista de tarefas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Lista de tarefas</h1>
     <section class='container'>
-        
+
+        <div class="filter-container container">
+            <input type="text"id="filterInput" placeholder="Filtrar tarefas">
+        </div>        
+
         <div class="input-container">
-            <input type="text" name="task" id="task">
+            <input type="text" name="task" id="task" placeholder="Digite uma tarefa" >
             <input type="button" value="Adicionar" id="btn">
 
         </div>
